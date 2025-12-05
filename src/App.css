@@ -124,15 +124,6 @@ body {
 
 
 
-@keyframes horizon-move {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100px);
-  }
-}
-
 /* Floating Particles */
 .particle {
   position: absolute;
@@ -204,19 +195,6 @@ body {
   display: inline-block;
 }
 
-.header-title {
-  /* kept for text fallback or future use */
-  font-size: 3rem;
-  font-weight: bold;
-  background: var(--gradient-vice);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: var(--glow-pink);
-  letter-spacing: 2px;
-  margin: 0;
-}
-
 .header-police {
   max-width: 560px;
   width: 100%;
@@ -249,26 +227,9 @@ body {
   z-index: 2;
 }
 
-.header-title-image {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 8px 0;
-  filter: drop-shadow(0 0 22px rgba(255, 20, 147, 0.55));
-  animation: float 3s ease-in-out infinite;
-}
-
 @media (max-width: 768px) {
-  .header-title {
-    font-size: 2.2rem;
-  }
   .header-police {
     max-width: 280px;
-  }
-  .header-logo,
-  .header-title-image {
-    max-width: 200px;
   }
   .header-logo {
     bottom: -70px;
@@ -278,15 +239,8 @@ body {
 }
 
 @media (max-width: 480px) {
-  .header-title {
-    font-size: 1.6rem;
-  }
   .header-police {
     max-width: 220px;
-  }
-  .header-logo,
-  .header-title-image {
-    max-width: 150px;
   }
   .header-logo {
     bottom: -45px;
@@ -328,8 +282,11 @@ body {
   flex: 1;
   padding: 15px 200px;
   background: rgba(26, 26, 46, 0.7);
-  border: none;
-  box-shadow: none;
+  border: 2px solid var(--color-neon-cyan);
+  box-shadow: 
+    0 0 10px var(--color-neon-cyan),
+    0 0 20px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
   color: var(--color-text-primary);
   font-family: 'Courier New', monospace;
   font-size: 1rem;
@@ -337,12 +294,17 @@ body {
   transition: all 0.3s ease;
   outline: none;
   text-align: center;
+  position: relative;
 }
 
 .todo-input:focus {
   background: rgba(26, 26, 46, 0.9);
-  border: none;
-  box-shadow: none;
+  border-color: var(--color-neon-pink);
+  box-shadow: 
+    0 0 15px var(--color-neon-pink),
+    0 0 30px rgba(255, 20, 147, 0.4),
+    0 0 45px rgba(157, 0, 255, 0.3),
+    inset 0 0 25px rgba(255, 20, 147, 0.15);
   outline: none;
   text-align: left;
   padding-left: 20px;

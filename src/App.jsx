@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
-import ElectricBorder from './ElectricBorder'
 import TargetCursor from './TargetCursor'
 
 // Background Particles Component
 function ParticleBackground() {
+  const isMobile = window.innerWidth <= 768;
+  const particleCount = isMobile ? 10 : 30; // Réduit à 10 sur mobile
+  
   const [particles] = useState(() => 
-    Array.from({ length: 30 }, (_, i) => ({
+    Array.from({ length: particleCount }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       delay: Math.random() * 5,
@@ -198,22 +200,14 @@ function TodoList() {
 
         {/* Input Section */}
         <form onSubmit={addTask} className="input-section">
-          <ElectricBorder
-            color="#7df9ff"
-            speed={0.6}
-            chaos={0.5}
-            thickness={2}
-            style={{ borderRadius: 16 }}
-          >
-            <input
-              type="text"
-              className="todo-input"
-              placeholder="Entrez votre mission..."
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              maxLength="150"
-            />
-          </ElectricBorder>
+          <input
+            type="text"
+            className="todo-input"
+            placeholder="Entrez votre mission..."
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            maxLength="150"
+          />
           <button 
             type="submit" 
             className="add-btn cursor-target"

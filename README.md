@@ -1,11 +1,15 @@
 # 🎮 To-do APP GTA VICE CITY
 
-Une application To-do List moderne inspirée du style des menus de GTA Vice City. Construite avec React, Vite.
+Une application To-do List moderne inspirée du style des menus de GTA Vice City. Build with React, Vite.
+
+Demo : https://earnest-parfait-eb00e3.netlify.app/
+
+<img width="1919" height="944" alt="Capture d&#39;écran 2025-12-05 123703" src="https://github.com/user-attachments/assets/ca9bc096-a189-4749-91e2-e3a7459decf6" />
+
 
 ## ✨ Fonctionnalités
 
 - **Opérations CRUD complètes** : Créer, lire, mettre à jour et supprimer des tâches facilement
-- **Édition de tâches** : Cliquez sur n'importe quelle tâche pour l'éditer en ligne
 - **Complétude des tâches** : Marquez les tâches comme complètes/incomplètes avec des cases à cocher
 - **Stockage local** : Toutes les tâches sont automatiquement sauvegardées entre les sessions
 - **Design réactif** : Optimisé pour desktop, tablette et appareils mobiles
