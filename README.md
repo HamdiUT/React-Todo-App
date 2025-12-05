@@ -4,7 +4,8 @@ Une application To-do List moderne inspirée du style des menus de GTA Vice City
 
 Demo : https://ornate-nougat-7de5c8.netlify.app/
 
-<img width="1863" height="960" alt="Capture d’écran du 2025-12-05 14-50-09" src="https://github.com/user-attachments/assets/e2bf70a1-e801-477f-b8d3-c47a2f6e5264" />
+<img width="1863" height="955" alt="Capture d’écran du 2025-12-05 14-56-46" src="https://github.com/user-attachments/assets/0547f48d-b181-4f59-90c3-e88ee143b00e" />
+
 
 
 
