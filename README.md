@@ -2,9 +2,10 @@
 
 Une application To-do List moderne inspirée du style des menus de GTA Vice City. Build with React, Vite.
 
-Demo : https://earnest-parfait-eb00e3.netlify.app/
+Demo : https://ornate-nougat-7de5c8.netlify.app/
 
-<img width="1919" height="944" alt="Capture d&#39;écran 2025-12-05 123703" src="https://github.com/user-attachments/assets/ca9bc096-a189-4749-91e2-e3a7459decf6" />
+<img width="1863" height="960" alt="Capture d’écran du 2025-12-05 14-50-09" src="https://github.com/user-attachments/assets/e2bf70a1-e801-477f-b8d3-c47a2f6e5264" />
+
 
 
 ## ✨ Fonctionnalités
